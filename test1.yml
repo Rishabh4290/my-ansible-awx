@@ -2,7 +2,7 @@
 - hosts: localhost
   tasks:
    - name: 1.1.18 - Ensure sticky bit is set on all world-writable directories - changed_when
-     shell: echo "hello"
+     shell: echo "hello {{what_is_your_name}}"
      register: hello
 
    - debug: 
