@@ -1,0 +1,10 @@
+---
+- hosts: localhost
+  tasks:
+   - name: 1.1.18 - Ensure sticky bit is set on all world-writable directories - changed_when
+     shell: echo "hello"
+     register: hello
+
+   - debug: 
+       var: hello
+     changed_when: False
